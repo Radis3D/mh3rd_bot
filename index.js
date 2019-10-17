@@ -60,4 +60,4 @@ client.once('ready', () => {
     
 });
 
-client.login('NjMzOTQxMTM2ODgwNDM1MjAx.Xafr6w.oxX72-g9QKtZOIXwZI7_8KtmeqM');
+client.login('Gv5FxyXThMxuAKL7mLBFREoiEOC-X6fr');
