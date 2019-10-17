@@ -3,7 +3,7 @@ const fs = require('fs');
 const {token, prefix} = require('./events/config.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-global.client = client;
+global.clientz = client;
 //client.commands = new Discord.Collection();
 
 /* fs.readdir('./monster/', (err, mondata) => {
@@ -60,4 +60,4 @@ client.once('ready', () => {
     
 });
 
-client.login('NjMzOTQxMTM2ODgwNDM1MjAx.Xaf0hw.gzezVcTNuqHGOLGO6b0fxnPFVaI');
+clientz.login('NjMzOTQxMTM2ODgwNDM1MjAx.Xaf0hw.gzezVcTNuqHGOLGO6b0fxnPFVaI');
