@@ -60,4 +60,4 @@ client.once('ready', () => {
     
 });
 
-client.login("\'"+token+"\'");
+client.login('NjMzOTQxMTM2ODgwNDM1MjAx.XafSrw.7b-rSaiFWb3VTdx_TYyFvNH0kl0');
