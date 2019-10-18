@@ -33,7 +33,7 @@ fs.readdir('./monster/', (err, mondata) => {
     })
   }); */
 
-clientz.once('ready', () => {
+clientz.on('ready', () => {
     console.log(`${clientz.user.tag} at your service!`)
     clientz.user.setStatus('available') // Can be 'available', 'idle', 'dnd', or 'invisible'
     clientz.user.setPresence({
