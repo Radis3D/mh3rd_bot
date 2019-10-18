@@ -455,31 +455,31 @@ module.exports = {
         //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
         const jadebarroth_embed = {
             color: 0x00AE86,
-            title: 'Barroth / ボルボロス (Boruborosu)',
+            title: 'Jade Barroth / ボルボロス亜種 (Boruborosu Ashu)',
             //url: 'https://discord.js.org',
             author: {
-                name: 'Barroth',
-                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/1/11/MHP3-Barroth_Icon.png',
+                name: 'Jade Barroth',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/91/MHP3-Jade_Barroth_Icon.png',
                 //url: 'https://discord.js.org',
             },
             //description: 'Some description here',
             thumbnail: {
-                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/1/11/MHP3-Barroth_Icon.png',
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/91/MHP3-Jade_Barroth_Icon.png',
             },
             fields: [
                 {
                     name: 'Element(s)',
-                    value: 'None',
+                    value: '<:eleice:633851903033212928> Ice',
                     inline: true,
                 },
                 {
                     name: 'Ailment(s)',
-                    value: '<:elewater:633851902659919883> Waterblight\n <:mudman:634713411313205254> Muddy',
+                    value: '<:eleice:633851903033212928> Iceblight\n<:snowsalju:634705578223992833> Snowman',
                     inline: true,
                 },
                 {
                     name: 'Weakness',
-                    value: '(<:elewater:633851902659919883> Water )\n<:elefire:633851902622302230> Fire\n<:eleice:633851903033212928> Ice\n*() ketika berlumpur*',
+                    value: '(<:elefire:633851902622302230> Fire )\n<:elethunder:634322078354636800> Thunder\n*() ketika bersalju*',
                     inline: true,
                 },
                 {
@@ -504,6 +504,118 @@ module.exports = {
         };
         //message.channel.send({files: [attachment], embed:agnaktor_embed});
         message.channel.send({embed:jadebarroth_embed});
+        console.log('responded')
+    },
+
+    bulldrome: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const bulldrome_embed = {
+            color: 0x00AE86,
+            title: 'Bulldrome / ドスファンゴ (Dosufango)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Bulldrome',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/4/49/MHP3-Bulldrome_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/4/49/MHP3-Bulldrome_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elethunder:634322078354636800> Thunder',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/38/DMG-Barroth.png/',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:bulldrome_embed});
+        console.log('responded')
+    },
+
+    nargacuga: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const nargacuga_embed = {
+            color: 0x00AE86,
+            title: 'Nargacuga / ナルガクルガ (Narugakuruga)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Nargacuga',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/1/1e/MHP3-Nargacuga_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/1/1e/MHP3-Nargacuga_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★☆',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/38/DMG-Barroth.png/',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:nargacuga_embed});
         console.log('responded')
     },
 }
