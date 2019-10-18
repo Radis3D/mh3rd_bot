@@ -35,13 +35,13 @@ fs.readdir('./monster/', (err, mondata) => {
 
 clientz.on('ready', () => {
     console.log(`${clientz.user.tag} at your service!`)
-    clientz.user.setStatus('available') // Can be 'available', 'idle', 'dnd', or 'invisible'
-    clientz.user.setPresence({
+    clientz.user.setStatus('dnd', 'Made by Radish Devp')  // Can be 'available', 'idle', 'dnd', or 'invisible'
+    /*clientz.user.setPresence({
         game: {
             name: 'created by Radish Devp',
             type: 0
         }
-    });
+    });*/
 });   
 
 clientz.on('message', message => {
