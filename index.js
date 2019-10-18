@@ -82,6 +82,10 @@ clientz.on('message', message => {
             }
         } else if (args[0] === 'barroth' || args[0] === 'Barroth'){
             cmdmon.barroth(message);
+        } else if (args[0] === 'bulldrome' || args[0] === 'Bulldrome'){
+            cmdmon.bulldrome(message);
+        } else if (args[0] === 'nargacuga' || args[0] === 'Nargacuga' || args[0] === 'Narga' || args[0] === 'narga'){
+            cmdmon.nargacuga(message);
         }
         else if (args[0] === 'monlist' || args[0] === 'Monlist'){
             cmdmonlist.monslist(message);
