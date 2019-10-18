@@ -730,4 +730,62 @@ module.exports = {
         message.channel.send({embed:diablos_embed});
         console.log('responded')
     },
+
+    blackdiablos: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const blackdiablos_embed = {
+            color: 0x00AE86,
+            title: 'Black Diablos / ディアブロス亜種 (Diaburosu Ashu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Black Diablos',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e9/MHP3-Black_Diablos_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e9/MHP3-Black_Diablos_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:eleice:633851903033212928> Ice',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★★ \n<:dungbomb:634343475109822485> : ★★☆\n <:sonicbomb:634045648810934292> : ★★★ ',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c1/DMG-Diablos.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:blackdiablos_embed});
+        console.log('responded')
+    },
+
+	// blackdiablos: function(message){
 }

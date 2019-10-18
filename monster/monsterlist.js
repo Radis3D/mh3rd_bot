@@ -1,7 +1,7 @@
 module.exports = {
 	monslist: function(message){
         
-        message.channel.send('\```Monster list :\n'+'1.  '+'agnaktor\n2.  '+'glacial agnaktor / g. agnaktor'+'\n3.  '+'akantor'+'\n4.  '+'arzuros'+'\n5.  '+'barioth'+'\n6.  '+'sand barioth / s. barioth'+'\n7.  '+'barroth'+'\n8.  '+'Jade Barroth'+'\n9.  '+'Bulldrome'+'\n10. '+'Deviljho'+'\n10. '+'Diablos'+'\n17. '+'great jaggi / g. jaggi'+'\n20. '+'Nargacuga'+'\n\```');
+        message.channel.send('\```Monster list :\n'+'1.  '+'agnaktor\n2.  '+'glacial agnaktor / g. agnaktor'+'\n3.  '+'akantor'+'\n4.  '+'arzuros'+'\n5.  '+'barioth'+'\n6.  '+'sand barioth / s. barioth'+'\n7.  '+'barroth'+'\n8.  '+'jade barroth'+'\n9.  '+'bulldrome'+'\n10. '+'deviljho'+'\n11. '+'diablos'+'\n17. '+'great jaggi / g. jaggi'+'\n20. '+'nargacuga'+'\n\```');
         message.channel.send('Gunakan \`!mh3rd <nama monster>\` untuk mengetahui data monster');
         console.log('responded')
     }
