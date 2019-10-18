@@ -11,6 +11,7 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const client = new Discord.Client();
 global.clientz = client;
+const {prefix} = require('./events/config.json');
 
 const cmdmon = require("./monster/dataMonster.js")
 const cmdmonlist = require("./monster/monsterlist.js")
