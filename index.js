@@ -89,7 +89,7 @@ clientz.on('message', message => {
         } else if (args[0] === 'deviljho' || args[0] === 'Deviljho'){
             cmdmon.deviljho(message);
         } else if (args[0] === 'diablos' || args[0] === 'Diablos'){
-            cmdmon.deviljho(message);
+            cmdmon.diablos(message);
         }
         else if (args[0] === 'monlist' || args[0] === 'Monlist'){
             cmdmonlist.monslist(message);
