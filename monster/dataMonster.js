@@ -618,4 +618,116 @@ module.exports = {
         message.channel.send({embed:nargacuga_embed});
         console.log('responded')
     },
+
+    deviljho: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const deviljho_embed = {
+            color: 0x00AE86,
+            title: 'Deviljho / イビルジョー (Ibirujo)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Deviljho',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/9d/MHP3-Deviljho_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/9d/MHP3-Deviljho_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:eledragon:633851902911840257> Dragon',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:defdown:634321613722091540> Defense Down\n<:eledragon:633851902911840257> Dragonblight\n<:elefire:633851902622302230> Firebligth (di lava)\n<:eleice:633851903033212928> Iceblight (di es)\n<:elewater:633851902659919883> Waterblight (di perairan)',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:eledragon:633851902911840257> Dragon',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★☆',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/38/DMG-Barroth.png/',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:deviljho_embed});
+        console.log('responded')
+    },
+
+    diablos: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const diablos_embed = {
+            color: 0x00AE86,
+            title: 'Diablos / ディアブロス (Diaburosu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Diablos',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0b/MHP3-Diablos_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0b/MHP3-Diablos_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:eleice:633851903033212928> Ice',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★★ \n<:dungbomb:634343475109822485> : ★★☆\n <:sonicbomb:634045648810934292> : ★★★ ',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c1/DMG-Diablos.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:diablos_embed});
+        console.log('responded')
+    },
 }
