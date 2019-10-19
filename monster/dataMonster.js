@@ -765,7 +765,7 @@ module.exports = {
                 },
                 {
                     name: 'Traps',
-                    value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★★ \n<:dungbomb:634343475109822485> : ★★☆\n <:sonicbomb:634045648810934292> : ★★★ ',
+                    value: '<:shocktrap:634038493395288065> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★★ \n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆\n<:sonicbomb:634045648810934292> : ★★★',
                     inline: true,
                 },
                 /* {
@@ -786,8 +786,234 @@ module.exports = {
         //message.channel.send({files: [attachment], embed:agnaktor_embed});
         message.channel.send({embed:blackdiablos_embed});
         console.log('responded')
-    }
+    },
 
-    
+    duramboros: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const duramboros_embed = {
+            color: 0x00AE86,
+            title: 'Duramboros / ドボルベルク (Doboruberuku)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Duramboros',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/6/6a/MHP3-Duramboros_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/6/6a/MHP3-Duramboros_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:stun:634925756765437952> Stun',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★☆\n<:pitfaltrap:634038423442685963> : ★★★ \n<:dungbomb:634343475109822485> : ★☆☆',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            /* image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c1/DMG-Diablos.png',
+            },         */
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:duramboros_embed});
+        console.log('responded')
+    },
+
+    tigrex: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const tigrex_embed = {
+            color: 0x00AE86,
+            title: 'Tigrex / ティガレックス (Tigarekkusu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Tigrex',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/5/5a/MHP3-Tigrex_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/5/5a/MHP3-Tigrex_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:snowsalju:634705578223992833> Snowman (di salju)\n<:eleice:633851903033212928> Iceblight (di es)\n<:elewater:633851902659919883> Waterblight (di perairan)',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:eledragon:633851902911840257>  Dragon',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    //value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★☆\n<:pitfaltrap:634038423442685963> : ★★★ \n<:dungbomb:634343475109822485> : ★☆☆',
+                    value: '',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            /* image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c1/DMG-Diablos.png',
+            },         */
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:tigrex_embed});
+        console.log('responded')
+    },
+
+    giginox: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const giginox_embed = {
+            color: 0x00AE86,
+            title: 'Giginox / ギギネブラ (Giginebura)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Giginox',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/32/MHP3-Gigginox_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/32/MHP3-Gigginox_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:poison:635011341630963712> Poison',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:dungbomb:634343475109822485> : ★★★',
+                    //value: '',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/08/DMG-Gigginox.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:giginox_embed});
+        console.log('responded')
+    },
+
+    balefulgiginox: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const balefulgiginox_embed = {
+            color: 0x00AE86,
+            title: 'Baleful Giginox / ギギネブラ亜種 (Giginebura ashu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Baleful Giginox',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c3/MHP3-Baleful_Gigginox_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c3/MHP3-Baleful_Gigginox_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elethunder:634322078354636800> Thunder',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elethunder:634322078354636800> Thunderblight\n<:paralyze:635013149598154752> Paralyze',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:dungbomb:634343475109822485> : ★★★',
+                    //value: '',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/08/DMG-Gigginox.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:balefulgiginox_embed});
+        console.log('responded')
+    },
+
 }
 // clientz.user.setStatus('idle', 'Made by Radish Devp')

@@ -77,6 +77,10 @@ clientz.on('message', message => {
             }
         } else if (args[0] === 'barroth' || args[0] === 'Barroth'){
             cmdmon.barroth(message);
+        } else if (args[0] === 'jade' || args[0] === 'Jade' || args[0] === 'j.'|| args[0] === 'J.'){
+            if (args[1] === 'barroth' || args[1] === 'Barroth'){
+                cmdmon.jadebarroth(message);
+            }
         } else if (args[0] === 'bulldrome' || args[0] === 'Bulldrome'){
             cmdmon.bulldrome(message);
         } else if (args[0] === 'nargacuga' || args[0] === 'Nargacuga' || args[0] === 'Narga' || args[0] === 'narga'){
@@ -85,11 +89,22 @@ clientz.on('message', message => {
             cmdmon.deviljho(message);
         } else if (args[0] === 'diablos' || args[0] === 'Diablos'){
             cmdmon.diablos(message);
-        } else if (args[0] === 'black' || args[0] === 'Black' || args[0] === 'b.' || args[0] === 'B.'){
+        } else if (args[0] === 'black' || args[0] === 'Black'){
 			if (args[1] === 'diablos' || args[1] === 'Diablos'){
                 cmdmon.blackdiablos(message);
             }
-            clientz.user.setStatus('idle', 'Made by Radish Devp')
+        } else if (args[0] === 'duramboros' || args[0] === 'Duramboros'){
+            cmdmon.duramboros(message);
+        } else if (args[0] === 'b.' || args[0] === 'B.'){
+            if (args[1] === 'diablos' || args[1] === 'Diablos'){
+                cmdmon.blackdiablos(message);
+            } else if (args[1] === 'giginox' || args[1] === 'Giginox'){
+                cmdmon.balefulgiginox(message);
+            }
+        } else if (args[0] === 'baleful' || args[0] === 'Baleful'){
+			if (args[1] === 'giginox' || args[1] === 'Giginox'){
+                cmdmon.balefulgiginox(message);
+            }
         }
         else if (args[0] === 'monlist' || args[0] === 'Monlist'){
             cmdmonlist.monslist(message);
@@ -97,7 +112,7 @@ clientz.on('message', message => {
     } else if (command === `server`) {
             message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
         }
-    
+        clientz.user.setStatus('idle', 'Made by Radish Devp')
 });   
 
 clientz.login(process.env.BOT_TOKEN);
