@@ -227,6 +227,7 @@ module.exports = {
     console.log('responded')
     },
 
+    
     arzuros: function(message){
         //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
         const arzuros_embed = {
@@ -785,7 +786,8 @@ module.exports = {
         //message.channel.send({files: [attachment], embed:agnaktor_embed});
         message.channel.send({embed:blackdiablos_embed});
         console.log('responded')
-    },
+    }
 
-	// blackdiablos: function(message){
+    
 }
+// clientz.user.setStatus('idle', 'Made by Radish Devp')

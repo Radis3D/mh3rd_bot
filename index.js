@@ -1,30 +1,23 @@
-/* require('dotenv').config()
-const fs = require('fs');
-global.fs = fs;
-const {token, prefix} = require('./events/config.json');
-const Discord = require('discord.js');
-const client = new Discord.Client();
-global.clientz = client; */
-
 require("dotenv").config();
 const Discord = require("discord.js");
-const fs = require("fs");
+//const fs = require("fs");
 const client = new Discord.Client();
 global.clientz = client;
-const {prefix} = require('./events/config.json');
-
-const cmdmon = require("./monster/dataMonster.js")
-const cmdmonlist = require("./monster/monsterlist.js")
-global.cmdmon = cmdmon;
-fs.readdir('./monster/', (err, mondata) => {
+//const {prefix} = require('./events/config.json');
+const prefix = '!';
+/* fs.readdir('./monster/', (err, mondata) => {
     mondata.forEach(monsterdata => {
       const eventHandler = require(`./monster/${monsterdata}`)
       const eventName = monsterdata.split('.')[0]
       client.on(eventName, (...args) => eventHandler(client, ...args))
-      console.log(monsterdata)
+      console.log('load : '+monsterdata)
     })
-  });
-
+  }); */
+  
+const cmdmon = require("./monster/dataMonster.js")
+const cmdmonlist = require("./monster/monsterlist.js")
+global.cmdmon = cmdmon;
+global.cmdmonlist = cmdmonlist;
 /* fs.readdir('./events/', (err, files) => {
     files.forEach(file => {
       const eventHandler = require(`./events/${file}`)
@@ -35,7 +28,7 @@ fs.readdir('./monster/', (err, mondata) => {
 
 clientz.on('ready', () => {
     console.log(`${clientz.user.tag} at your service!`)
-    clientz.user.setStatus('dnd', 'Made by Radish Devp')  // Can be 'available', 'idle', 'dnd', or 'invisible'
+    clientz.user.setStatus('idle', 'Made by Radish Devp')  // Can be 'available', 'idle', 'dnd', or 'invisible'
     clientz.user.setPresence({
         game: {
             name: 'Radish Devp',
@@ -48,15 +41,17 @@ clientz.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     const args = message.content.slice(prefix.length).split(' ');
     const command = args.shift().toLowerCase();
-    console.log(message.content);
-    if (command === 'mh3rd') {
+    console.log('msg \''+message.content+'\' was requested by \`'+message.author.tag+'\`');
+    //console.log(prefix.length+' '+args)
+    clientz.user.setStatus('online', 'Made by Radish Devp')
+    if (command === 'mh3rd' || command === 'mhp3rd') {
         if (!args.length) {
-             message.channel.send(`${message.author}, gunakan command \`${prefix}mh3rd <nama monster>\` untuk mendapatkan data monster`);
+             message.channel.send(`${message.author}, gunakan _command_ \`${prefix}mh3rd <nama monster>\` atau \`${prefix}mhp3rd <nama monster>\` untuk mendapatkan data monster`);
         } else if (args[0] === 'great' || args[0] === 'Great'){
-            if (args[1] === 'jaggi' || args[1] === 'Jaggi'){
+           if (args[1] === 'jaggi' || args[1] === 'Jaggi'){
                cmdmon.greatjaggi(message);
-            } else {
-                message.channel.send(`${message.author}, ada 3 monster yang berawalan 'great'; \`great jaggi, great wrogi,\` dan \`great baggi\``);
+            } else { 
+                message.channel.send(`${message.author}, ada 3 monster yang berawalan 'great';\n\`great jaggi, great wrogi,\` dan \`great baggi\``);
             }
         } else if (args[0] === 'agnaktor' || args[0] === 'Agnaktor'){
             cmdmon.agnaktor(message);
@@ -89,16 +84,17 @@ clientz.on('message', message => {
         } else if (args[0] === 'deviljho' || args[0] === 'Deviljho'){
             cmdmon.deviljho(message);
         } else if (args[0] === 'diablos' || args[0] === 'Diablos'){
-            cmdmon.deviljho(message);
+            cmdmon.diablos(message);
         } else if (args[0] === 'black' || args[0] === 'Black' || args[0] === 'b.' || args[0] === 'B.'){
 			if (args[1] === 'diablos' || args[1] === 'Diablos'){
                 cmdmon.blackdiablos(message);
             }
+            clientz.user.setStatus('idle', 'Made by Radish Devp')
         }
         else if (args[0] === 'monlist' || args[0] === 'Monlist'){
             cmdmonlist.monslist(message);
         }
-    } else if (message.content === `${prefix}server`) {
+    } else if (command === `server`) {
             message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
         }
     
