@@ -50,9 +50,13 @@ clientz.on('message', message => {
         } else if (args[0] === 'great' || args[0] === 'Great'){
            if (args[1] === 'jaggi' || args[1] === 'Jaggi'){
                cmdmon.greatjaggi(message);
-            } else { 
+           } else if (args[1] === 'baggi' || args[1] === 'Baggi'){
+                cmdmon.greatbaggi(message);
+           } else if (args[1] === 'wroggi' || args[1] === 'Wroggi'){
+                cmdmon.greatwroggi(message);
+           } else { 
                 message.channel.send(`${message.author}, ada 3 monster yang berawalan 'great';\n\`great jaggi, great wrogi,\` dan \`great baggi\``);
-            }
+           }
         } else if (args[0] === 'agnaktor' || args[0] === 'Agnaktor'){
             cmdmon.agnaktor(message);
         } else if (args[0] === 'glacial' || args[0] === 'Glacial'){
@@ -62,9 +66,15 @@ clientz.on('message', message => {
         } else if (args[0] === 'g.' || args[0] === 'G.'){
             if (args[1] === 'jaggi' || args[1] === 'Jaggi'){
                 cmdmon.greatjaggi(message);
-             } if (args[1] === 'agnaktor' || args[1] === 'Agnaktor'){
+            } else if (args[1] === 'baggi' || args[1] === 'Baggi'){
+                cmdmon.greatbaggi(message);
+            } else if (args[1] === 'wroggi' || args[1] === 'Wroggi'){
+                cmdmon.greatwroggi(message);
+            } else if (args[1] === 'agnaktor' || args[1] === 'Agnaktor'){
                 cmdmon.glacialagnaktor(message);
-                }
+            } else if (args[1] === 'nargacuga' || args[1] === 'Nargacuga' || args[1] === 'Narga' || args[1] === 'narga'){
+                cmdmon.greennargacuga(message);
+            }
         } else if (args[0] === 'akantor' || args[0] === 'Akantor'){
             cmdmon.akantor(message);
         } else if (args[0] === 'arzuros' || args[0] === 'Arzuros'){
@@ -106,6 +116,12 @@ clientz.on('message', message => {
         } else if (args[0] === 'baleful' || args[0] === 'Baleful'){
 			if (args[1] === 'giginox' || args[1] === 'Giginox'){
                 cmdmon.balefulgiginox(message);
+            }
+        } else if (args[0] === 'lagombi' || args[0] === 'Lagombi'){
+            cmdmon.lagombi(message);
+        }else if (args[0] === 'green' || args[0] === 'Green'){
+			if (args[1] === 'nargacuga' || args[1] === 'Nargacuga' || args[1] === 'Narga' || args[1] === 'narga'){
+                cmdmon.greennargacuga(message);
             }
         }
         else if (args[0] === 'monlist' || args[0] === 'Monlist'){

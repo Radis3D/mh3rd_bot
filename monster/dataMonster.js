@@ -8,7 +8,7 @@ module.exports = {
         const greatjaggi_embed = {
             color: 0x00AE86,
             title: 'Great Jaggi / ドスジャギィ (Dosujagyi)',
-            url: 'https://discord.js.org',
+           // url: 'https://discord.js.org',
             author: {
                 name: 'Great Jaggi',
                 icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/8/8e/MHP3-Great_Jaggi_Icon.png/revision/latest/scale-to-width-down/62',
@@ -878,7 +878,7 @@ module.exports = {
                 {
                     name: 'Traps',
                     //value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★☆\n<:pitfaltrap:634038423442685963> : ★★★ \n<:dungbomb:634343475109822485> : ★☆☆',
-                    value: '',
+                    value: 'no data',
                     inline: true,
                 },
                 /* {
@@ -1012,6 +1012,228 @@ module.exports = {
         };
         //message.channel.send({files: [attachment], embed:agnaktor_embed});
         message.channel.send({embed:balefulgiginox_embed});
+        console.log('responded')
+    },
+
+    greatbaggi: function(message){
+        const greatbaggi_embed = {
+            color: 0x00AE86,
+            title: 'Great Baggi / ドスバギィ (Dosubagii)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Great Baggi',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c4/MHP3-Great_Baggi_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c4/MHP3-Great_Baggi_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:sleep:635048249388040192> Sleep',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★☆☆',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/5/5d/DMG-GreatBaggi.png',
+            },
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        message.channel.send({embed:greatbaggi_embed});
+        console.log('responded')
+    },
+
+    greatwroggi: function(message){
+        const greatwroggi_embed = {
+            color: 0x00AE86,
+            title: 'Great Wroggi / ドスフロギィ (Dosufurogi)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Great Wroggi',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/36/MHP3-Great_Wroggi_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/36/MHP3-Great_Wroggi_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:poison:635011341630963712> Poison',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:eleice:633851903033212928> Ice',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★☆☆',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            /* image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/5/5d/DMG-GreatBaggi.png',
+            }, */
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        message.channel.send({embed:greatwroggi_embed});
+        console.log('responded')
+    },
+
+    lagombi: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const lagombi_embed = {
+            color: 0x00AE86,
+            title: 'Lagombi / ウルクスス (Urukususu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Lagombi',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/02/MHP3-Lagombi_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/02/MHP3-Lagombi_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:eleice:633851903033212928> Ice',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:eleice:633851903033212928> Iceblight',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elefire:633851902622302230> Fire\n<:elethunder:634322078354636800> Thunder',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    //value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆',
+                    value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/38/DMG-Barroth.png/',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:lagombi_embed});
+        console.log('responded')
+    },
+
+    greennargacuga: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const greennargacuga_embed = {
+            color: 0x00AE86,
+            title: 'Nargacuga / ナルガクルガ (Narugakuruga)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Nargacuga',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/2/25/MHP3-Green_Nargacuga_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/2/25/MHP3-Green_Nargacuga_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:stun:634925756765437952> Stun',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    // value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:pitfaltrap:634038423442685963> : ★★☆',
+                    value:'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/3/38/DMG-Barroth.png/',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:greennargacuga_embed});
         console.log('responded')
     },
 
