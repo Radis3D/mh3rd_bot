@@ -95,6 +95,8 @@ clientz.on('message', message => {
             }
         } else if (args[0] === 'duramboros' || args[0] === 'Duramboros'){
             cmdmon.duramboros(message);
+        } else if (args[0] === 'giginox' || args[0] === 'Giginox'){
+            cmdmon.giginox(message);
         } else if (args[0] === 'b.' || args[0] === 'B.'){
             if (args[1] === 'diablos' || args[1] === 'Diablos'){
                 cmdmon.blackdiablos(message);
