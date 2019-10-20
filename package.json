@@ -1,19 +1,20 @@
 {
-  "name": "monhun3rd",
+  "name": "newmh3rdbot",
   "version": "0.1.0",
-  "description": "Bot untuk monster hunter 3rd ppsspp",
+  "description": "Recoding BOT MH3rd",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js"
   },
-  "author": "Radis3D",
+  "keywords": [
+    "Radish",
+    "Devp"
+  ],
+  "author": "Radish Devp",
   "license": "ISC",
   "dependencies": {
+    "ascii-table": "0.0.9",
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4"
   }
 }
