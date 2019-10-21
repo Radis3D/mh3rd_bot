@@ -100,6 +100,8 @@ module.exports={
             cmdmon.rathian(message);
         } else if (args[0].toLowerCase() === 'ukanlos'){
             cmdmon.ukanlos(message);
+        }  else if (args[0].toLowerCase() === 'tigrex'){
+            cmdmon.tigrex(message);
         } else if (args[0].toLowerCase() === 'brute'){
 			if (args[1].toLowerCase() === 'tigrex'){
                 cmdmon.brutetigrex(message);
