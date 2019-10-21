@@ -69,6 +69,8 @@ module.exports={
         } else if (args[0].toLowerCase() === 'black'){
 			if (args[1].toLowerCase() === 'diablos'){
                 cmdmon.blackdiablos(message);
+            } else if (args[1].toLowerCase() === 'tigrex'){
+                cmdmon.brutetigrex(message);
             }
         } else if (args[0].toLowerCase() === 'duramboros'){
             cmdmon.duramboros(message);
@@ -174,9 +176,9 @@ module.exports={
             } else if (args[1].toLowerCase() === 'hr4'){
                 cmdguildkey.hr4(message);
             } else if (args[1].toLowerCase() === 'hr5'){
-                //cmdguildkey.hr5(message);
+                cmdguildkey.hr5(message);
             } else if (args[1].toLowerCase() === 'hr6'){
-                //cmdguildkey.hr6(message);
+                cmdguildkey.hr6(message);
             }
         }
         
