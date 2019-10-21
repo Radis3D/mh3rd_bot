@@ -2114,7 +2114,7 @@ module.exports = {
                 },
                 {
                     name: 'Ailment(s)',
-                    value: '<:eledragon:633851902911840257> Dragon\n<:eleice:633851903033212928> Ice\n<:elethunder:634322078354636800> Thunder\n<:elefire:633851902622302230> Fire\n<:snowsalju:634705578223992833> Snowman',
+                    value: '<:eledragon:633851902911840257> Dragonblight\n<:eleice:633851903033212928> Iceblight\n<:elethunder:634322078354636800> Thunderblight\n<:elefire:633851902622302230> Fireblight\n<:snowsalju:634705578223992833> Snowman',
                     inline: true,
                 },
                 {
