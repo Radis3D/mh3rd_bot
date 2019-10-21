@@ -1,8 +1,8 @@
 module.exports={
     name: "mhp3rd",
     aliases: ["mh3rd", "3rd"],
-    category: "monsterhunter",
-    description: "say something",
+    category: "monsterhunter3rd",
+    description: "Data data monster hunter portable 3rd",
     run: async (client, message, args) => {
         if (!args.length) {
             message.channel.send(`${message.author}, gunakan _command_ \`${prefix.prefix}mh3rd <nama monster>\` atau \`${prefix.prefix}mhp3rd <nama monster>\` untuk mendapatkan data monster`);
@@ -48,9 +48,15 @@ module.exports={
             }
         } else if (args[0].toLowerCase() === 'barroth'){
             cmdmon.barroth(message);
-        } else if (args[0].toLowerCase() === 'jade'|| args[0].toLowerCase() === 'j.'){
+        } else if (args[0].toLowerCase() === 'jade'){
             if (args[1].toLowerCase() === 'barroth'){
                 cmdmon.jadebarroth(message);
+            }
+        } else if (args[0].toLowerCase() === 'j.'){
+            if (args[1].toLowerCase() === 'barroth'){
+                cmdmon.jadebarroth(message);
+            } else if (args[1].toLowerCase() === 'mohran'){
+                cmdmon.jhenmohran(message);
             }
         } else if (args[0].toLowerCase() === 'bulldrome'){
             cmdmon.bulldrome(message);
@@ -100,7 +106,7 @@ module.exports={
             cmdmon.rathian(message);
         } else if (args[0].toLowerCase() === 'ukanlos'){
             cmdmon.ukanlos(message);
-        }  else if (args[0].toLowerCase() === 'tigrex'){
+        } else if (args[0].toLowerCase() === 'tigrex'){
             cmdmon.tigrex(message);
         } else if (args[0].toLowerCase() === 'brute'){
 			if (args[1].toLowerCase() === 'tigrex'){
@@ -119,6 +125,8 @@ module.exports={
                 cmdmon.silverrathalos(message);
             } else if (args[1].toLowerCase() === 'barioth'){
                 cmdon.sandbarioth(message);
+            } else if (args[1].toLowerCase() === 'uragaan'){
+                cmdmon.steeluragaan(message);
             }
         } else if (args[0].toLowerCase() === 'royal' || args[0].toLowerCase() === 'r.'){
 			if (args[1].toLowerCase() === 'ludroth'){
@@ -128,11 +136,41 @@ module.exports={
 			if (args[1].toLowerCase() === 'ludroth'){
                 cmdmon.purpleludroth(message);
             }
+        } else if (args[0].toLowerCase() === 'uragaan'){
+            cmdmon.uragaan(message);
+        } else if (args[0].toLowerCase() === 'volvidon'){
+            cmdmon.volvidon(message);
+        } else if (args[0].toLowerCase() === 'zinogre'){
+            cmdmon.zinogre(message);
+        } else if (args[0].toLowerCase() === 'alatreon'){
+            cmdmon.alatreon(message);
+        } else if (args[0].toLowerCase() === 'amatsu'){
+            cmdmon.amatsu(message);
+        } else if (args[0].toLowerCase() === 'jhen'){
+			if (args[1].toLowerCase() === 'mohran'){
+                cmdmon.jhenmohran(message);
+            }
+        } else if (args[0].toLowerCase() === 'steel'){
+			if (args[1].toLowerCase() === 'uragaan'){
+                cmdmon.steeluragaan(message);
+            }
         }
-        else if (args[0].toLowerCase() === 'monlist'){
+        else if (args[0].toLowerCase() === 'monlist' || args[0].toLowerCase() === 'monslist'){
             cmdmonlist.monslist(message);
             //break;
-        } 
+        } else if (args[0].toLowerCase() === 'monster'){
+            if (args[1].toLowerCase() === 'list'){
+            cmdmonlist.monslist(message);
+            //break;
+            }
+        }
+        else if (args[0].toLowerCase() === 'keyquest' || args[0].toLowerCase() === 'kq'){
+            if (args[1].toLowerCase() === 'hr1'){
+                //cmdmon.steeluragaan(message);
+            }
+        } else if (args[0].toLowerCase() === 'keyguild' || args[0].toLowerCase() === 'kg'){
+            
+        }
         
         console.log(prefix.prefix)
     }
