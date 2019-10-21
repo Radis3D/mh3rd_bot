@@ -1753,10 +1753,10 @@ module.exports = {
         //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
         const brutetigrex_embed = {
             color: 0x00AE86,
-            title: 'Tigrex / ティガレックス (Tigarekkusu)',
+            title: 'Brute Tigrex / ティガレックス亜種 (Tigarekkusu Ashu)',
             //url: 'https://discord.js.org',
             author: {
-                name: 'Tigrex',
+                name: 'Brute Tigrex',
                 icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/ec/MHP3-Brute_Tigrex_Icon.png',
                 //url: 'https://discord.js.org',
             },
@@ -1772,7 +1772,7 @@ module.exports = {
                 },
                 {
                     name: 'Ailment(s)',
-                    value: '<:elefire:633851902622302230> Fireblight\n<:elewater:633851902659919883> Waterblight (di perairan)',
+                    value: '<:elefire:633851902622302230> Fireblight (di lava)\n<:elewater:633851902659919883> Waterblight (di perairan)',
                     inline: true,
                 },
                 {
