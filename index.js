@@ -59,7 +59,7 @@ client.on("message", async message =>{
     client.user.setStatus('idle', 'Made by Radish Devp')
 });
 
-client.login(process.env.bot_toket);
-//client.login(process.env.BOT_TOKEN);
+//client.login(process.env.bot_toket);
+client.login(process.env.BOT_TOKEN);
 console.log(`prefix: `+prefix.prefix)
 
