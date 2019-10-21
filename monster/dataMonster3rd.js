@@ -1863,5 +1863,404 @@ module.exports = {
         console.log('responded')
     },
 
+    uragaan: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const uragaan_embed = {
+            color: 0x00AE86,
+            title: 'Uragaan / ウラガンキン (Uragankin)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Uragaan',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/7/7c/MHP3-Uragaan_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/7/7c/MHP3-Uragaan_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elefire:633851902622302230> Fireblight\n<:sleep:635048249388040192> Sleep',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:eledragon:633851902911840257> Dragon\n<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆',
+                   //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e6/DMG-Uragaan.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:uragaan_embed});
+        console.log('responded')
+    },
+
+    steeluragaan: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const steeluragaan_embed = {
+            color: 0x00AE86,
+            title: 'Steel Uragaan / ウラガンキン亜種 (Uragankin Ashu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Steel Uragaan',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/6/6b/MHP3-Steel_Uragaan_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/6/6b/MHP3-Steel_Uragaan_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elefire:633851902622302230> Fireblight\n<:soiled:635675713852145690> Soiled',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:eledragon:633851902911840257> Dragon\n<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆',
+                   //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e6/DMG-Uragaan.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:steeluragaan_embed});
+        console.log('responded')
+    },
+
+    volvidon: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const volvidon_embed = {
+            color: 0x00AE86,
+            title: 'Volvidon / ラングロトラ (Rangurotora)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Volvidon',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/06/MHP3-Volvidon_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/06/MHP3-Volvidon_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:paralyze:635013149598154752> Paralyze\n<:soiled:635675713852145690> Soiled :soiled:',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    //value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆',
+                    value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e6/DMG-Uragaan.png',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:volvidon_embed});
+        console.log('responded')
+    },
+
+    zinogre: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const zinogre_embed = {
+            color: 0x00AE86,
+            title: 'Zinogre / ジンオウガ (Jin\'ōga)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Zinogre',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/6/62/MHP3-Zinogre_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/6/62/MHP3-Zinogre_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elethunder:634322078354636800> Thunder ',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:paralyze:635013149598154752> Paralyze\n<:elethunder:634322078354636800> Thunderblight',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:eleice:633851903033212928> Ice',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆ (ketika _charging_)',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e6/DMG-Uragaan.png',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:zinogre_embed});
+        console.log('responded')
+    },
+
+    alatreon: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const alatreon_embed = {
+            color: 0x00AE86,
+            title: 'Alatreon / アルバトリオン (Arubatorion)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Alatreon',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/8/8e/MHP3-Question_Mark_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/8/8e/MHP3-Question_Mark_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:eledragon:633851902911840257> Dragon\n<:eleice:633851903033212928> Ice :eleice:\n<:elethunder:634322078354636800> Thunder\n<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:eledragon:633851902911840257> Dragon\n<:eleice:633851903033212928> Ice :eleice:\n<:elethunder:634322078354636800> Thunder\n<:elefire:633851902622302230> Fire\n<:snowsalju:634705578223992833> Snowman',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '(*saat terbang*)\n<:elefire:633851902622302230> Fire\n<:eledragon:633851902911840257> Dragon\n\n(*saat di tanah*)\n<:eleice:633851903033212928> Ice :eleice:\n<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:flashbomb:634045675235049477> : ★☆☆\n(membuatnya mendarat untuk sementara waktu)',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/8/8d/DMG-Alatreon.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:alatreon_embed});
+        console.log('responded')
+    },
+
+    amatsu: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const amatsu_embed = {
+            color: 0x00AE86,
+            title: 'Amatsu / アマツマガツチ (Amatsumagatsuchi)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Amatsu',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/8/8e/MHP3-Question_Mark_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/8/8e/MHP3-Question_Mark_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elewater:633851902659919883> Waterblight',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elefire:633851902622302230> Fire\n<:eledragon:633851902911840257> Dragon',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:flashbomb:634045675235049477> : ★☆☆\n(membuatnya mendarat untuk sementara waktu)',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/8/8d/DMG-Alatreon.png',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:amatsu_embed});
+        console.log('responded')
+    },
+
+    jhenmohran: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const jhenmohran_embed = {
+            color: 0x00AE86,
+            title: 'Jhen Mohran / ジエン・モーラン (Jien Moran)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Jhen Mohran',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/eb/MHP3-Jhen_Mohran_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/eb/MHP3-Jhen_Mohran_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:eleice:633851903033212928> Ice\n<:eledragon:633851902911840257> Dragon',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: 'Hunting Gong',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0b/DMG-JhenMohran.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:jhenmohran_embed});
+        console.log('responded')
+    },
+
 }
 // clientz.user.setStatus('idle', 'Made by Radish Devp')
