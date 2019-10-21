@@ -871,7 +871,7 @@ module.exports = {
                 },
                 {
                     name: 'Weakness',
-                    value: '<:elethunder:634322078354636800> Thunder\n<:eledragon:633851902911840257>  Dragon',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:eledragon:633851902911840257> Dragon',
                     inline: true,
                 },
                 {
@@ -1403,13 +1403,13 @@ module.exports = {
             },
         };
         //message.channel.send({files: [attachment], embed:agnaktor_embed});
-        message.channel.send({embed:qurupeco_embed});
+        message.channel.send({embed:crimsonqurupeco_embed});
         console.log('responded')
     },
 
     rathalos: function(message){
         //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
-        const qurupeco_embed = {
+        const rathalos_embed = {
             color: 0x00AE86,
             title: 'Rathalos / リオレウス (Rioreusu)',
             //url: 'https://discord.js.org',
@@ -1435,7 +1435,7 @@ module.exports = {
                 },
                 {
                     name: 'Weakness',
-                    value: '<:elethunder:634322078354636800> Thunder\n<:eledragon:633851902911840257>  Dragon',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:eledragon:633851902911840257> Dragon',
                     inline: true,
                 },
                 {
@@ -1460,7 +1460,406 @@ module.exports = {
             },
         };
         //message.channel.send({files: [attachment], embed:agnaktor_embed});
-        message.channel.send({embed:qurupeco_embed});
+        message.channel.send({embed:rathalos_embed});
+        console.log('responded')
+    },
+
+    silverrathalos: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const silverrathalos_embed = {
+            color: 0x00AE86,
+            title: 'Silver Rathalos / リオレウス希少種 (Rioreusu Kishou Shu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Silver Rathalos',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/1/1b/MHP3-Silver_Rathalos_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/1/1b/MHP3-Silver_Rathalos_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elefire:633851902622302230> Fireblight\n<:stun:634925756765437952> Stun\n<:poison:635011341630963712> Poison',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★★\n<:shocktrap:634038493395288065> : ★★★\n<:flashbomb:634045675235049477> : ★★★\n<:dungbomb:634343475109822485> : ★★★',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/DMG-Rathalos.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:silverrathalos_embed});
+        console.log('responded')
+    },
+
+    rathian: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const rathian_embed = {
+            color: 0x00AE86,
+            title: 'Rathian / リオレイア (Rioreia)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Rathian',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/1/14/MHP3-Rathian_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/1/14/MHP3-Rathian_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elefire:633851902622302230> Fireblight\n<:poison:635011341630963712> Poison',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:eledragon:633851902911840257> Dragon',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★★\n<:shocktrap:634038493395288065> : ★★★\n<:flashbomb:634045675235049477> : ★★★\n<:dungbomb:634343475109822485> : ★★★',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/DMG-Rathalos.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:silverrathalos_embed});
+        console.log('responded')
+    },
+
+    goldenrathian: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const goldenrathian_embed = {
+            color: 0x00AE86,
+            title: 'Golden Rathian / リオレイア希少種 (Rioreia Kishou Shu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Golden Rathian',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/2/28/MHP3-Gold_Rathian_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/2/28/MHP3-Gold_Rathian_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elefire:633851902622302230> Fire',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elefire:633851902622302230> Fireblight\n<:poison:635011341630963712> Poison',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elethunder:634322078354636800> Thunder\n<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★★\n<:shocktrap:634038493395288065> : ★★★\n<:flashbomb:634045675235049477> : ★★★\n<:dungbomb:634343475109822485> : ★★★',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/DMG-Rathalos.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:goldenrathian_embed});
+        console.log('responded')
+    },
+
+    royalludroth: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const royalludroth_embed = {
+            color: 0x00AE86,
+            title: 'Royal Ludroth / ロアルドロス (Roarudorosu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Royal Ludroth',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/4/48/MHP3-Royal_Ludroth_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/4/48/MHP3-Royal_Ludroth_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elewater:633851902659919883> Waterblight',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elefire:633851902622302230> Fire\n<:elethunder:634322078354636800> Thunder',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/9b/DMG-RoyalLudroth.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:royalludroth_embed});
+        console.log('responded')
+    },
+
+    purpleludroth: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const purpleludroth_embed = {
+            color: 0x00AE86,
+            title: 'Purple Ludroth / ロアルドロス (Roarudorosu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Purple Ludroth',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/9f/MHP3-Purple_Ludroth_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/9f/MHP3-Purple_Ludroth_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:poison:635011341630963712> Poison',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elefire:633851902622302230> Fire\n<:elethunder:634322078354636800> Thunder',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆',
+                    //value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/9b/DMG-RoyalLudroth.png',
+            },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:purpleludroth_embed});
+        console.log('responded')
+    },
+
+    brutetigrex: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const brutetigrex_embed = {
+            color: 0x00AE86,
+            title: 'Tigrex / ティガレックス (Tigarekkusu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Tigrex',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/ec/MHP3-Brute_Tigrex_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/ec/MHP3-Brute_Tigrex_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: 'None',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:elefire:633851902622302230> Fireblight\n<:elewater:633851902659919883> Waterblight (di perairan)',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elewater:633851902659919883> Water',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    //value: '<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★☆\n<:pitfaltrap:634038423442685963> : ★★★ \n<:dungbomb:634343475109822485> : ★☆☆',
+                    value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            /* image: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/c/c1/DMG-Diablos.png',
+            },         */
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:brutetigrex_embed});
+        console.log('responded')
+    },
+
+    ukanlos: function(message){
+        //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
+        const ukanlos_embed = {
+            color: 0x00AE86,
+            title: 'Ukanlos / ウカムルバス (Ukamurubasu)',
+            //url: 'https://discord.js.org',
+            author: {
+                name: 'Ukanlos',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/b/b5/MHP3-Ukanlos_Icon.png',
+                //url: 'https://discord.js.org',
+            },
+            //description: 'Some description here',
+            thumbnail: {
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/b/b5/MHP3-Ukanlos_Icon.png',
+            },
+            fields: [
+                {
+                    name: 'Element(s)',
+                    value: '<:eleice:633851903033212928> Ice',
+                    inline: true,
+                },
+                {
+                    name: 'Ailment(s)',
+                    value: '<:eleice:633851903033212928> Iceblight\n<:snowsalju:634705578223992833> Snowman',
+                    inline: true,
+                },
+                {
+                    name: 'Weakness',
+                    value: '<:elefire:633851902622302230> Fire\n<:elethunder:634322078354636800> Thunder',
+                    inline: true,
+                },
+                {
+                    name: 'Traps',
+                    //value: '<:pitfaltrap:634038423442685963> : ★★☆\n<:shocktrap:634038493395288065> : ★★☆\n<:flashbomb:634045675235049477> : ★★☆\n<:dungbomb:634343475109822485> : ★★☆',
+                   value: 'no data',
+                    inline: true,
+                },
+                /* {
+                    name: 'Inline field title',
+                    value: 'Some value here',
+                    inline: true,
+                }, */
+            ],
+            // image: {
+            //     url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/9/9b/DMG-RoyalLudroth.png',
+            // },        
+            // timestamp: new Date(),
+            footer: {
+                text: 'Monster Hunter Fandom',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/a/a3/Logo-MHP3.png',
+            },
+        };
+        //message.channel.send({files: [attachment], embed:agnaktor_embed});
+        message.channel.send({embed:ukanlos_embed});
         console.log('responded')
     },
 
