@@ -164,12 +164,20 @@ module.exports={
             //break;
             }
         }
-        else if (args[0].toLowerCase() === 'keyquest' || args[0].toLowerCase() === 'kq'){
+        else if (args[0].toLowerCase() === 'keyquest' || args[0].toLowerCase() === 'kq' | args[0].toLowerCase() === 'keyguild' || args[0].toLowerCase() === 'kg'){
             if (args[1].toLowerCase() === 'hr1'){
-                //cmdmon.steeluragaan(message);
+                cmdguildkey.hr1(message);
+            } else if (args[1].toLowerCase() === 'hr2'){
+                cmdguildkey.hr2(message);
+            } else if (args[1].toLowerCase() === 'hr3'){
+                cmdguildkey.hr3(message);
+            } else if (args[1].toLowerCase() === 'hr4'){
+                cmdguildkey.hr4(message);
+            } else if (args[1].toLowerCase() === 'hr5'){
+                //cmdguildkey.hr5(message);
+            } else if (args[1].toLowerCase() === 'hr6'){
+                //cmdguildkey.hr6(message);
             }
-        } else if (args[0].toLowerCase() === 'keyguild' || args[0].toLowerCase() === 'kg'){
-            
         }
         
         console.log(prefix.prefix)

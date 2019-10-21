@@ -11,8 +11,10 @@ client.aliases = new Collection();
 
 const cmdmon = require("./monster/dataMonster3rd.js")
 const cmdmonlist = require("./monster/monsterlist3rd.js")
+const cmdguildkey = require("./guild/guildkey3rd.js")
 global.cmdmon = cmdmon;
 global.cmdmonlist = cmdmonlist;
+global.cmdguildkey = cmdguildkey;
 
 config({
    path: __dirname + "/.env"
@@ -57,7 +59,7 @@ client.on("message", async message =>{
     client.user.setStatus('idle', 'Made by Radish Devp')
 });
 
-//client.login(process.env.bot_toket);
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.bot_toket);
+//client.login(process.env.BOT_TOKEN);
 console.log(`prefix: `+prefix.prefix)
 

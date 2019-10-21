@@ -1,6 +1,6 @@
 {
   "name": "newmh3rdbot",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Recoding BOT MH3rd",
   "main": "index.js",
   "scripts": {
