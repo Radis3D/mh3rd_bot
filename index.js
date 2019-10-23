@@ -12,9 +12,13 @@ client.aliases = new Collection();
 const cmdmon = require("./monster/dataMonster3rd.js")
 const cmdmonlist = require("./monster/monsterlist3rd.js")
 const cmdguildkey = require("./guild/guildkey3rd.js")
+const cmddrinkquest = require("./guild/drinkquest.js")
+const cmdhotquest = require("./guild/hospringquest.js")
 global.cmdmon = cmdmon;
 global.cmdmonlist = cmdmonlist;
 global.cmdguildkey = cmdguildkey;
+global.cmddrinkquest = cmddrinkquest;
+global.cmdhotquest = cmdhotquest;
 
 config({
    path: __dirname + "/.env"

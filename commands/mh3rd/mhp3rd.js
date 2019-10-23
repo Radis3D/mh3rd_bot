@@ -166,7 +166,7 @@ module.exports={
             //break;
             }
         }
-        else if (args[0].toLowerCase() === 'keyquest' || args[0].toLowerCase() === 'kq' | args[0].toLowerCase() === 'keyguild' || args[0].toLowerCase() === 'kg'){
+        else if (args[0].toLowerCase() === 'keyquest' || args[0].toLowerCase() === 'kq' || args[0].toLowerCase() === 'keyguild' || args[0].toLowerCase() === 'kg'){
             if (args[1].toLowerCase() === 'hr1'){
                 cmdguildkey.hr1(message);
             } else if (args[1].toLowerCase() === 'hr2'){
@@ -181,7 +181,12 @@ module.exports={
                 cmdguildkey.hr6(message);
             }
         }
-        
+        else if (args[0].toLowerCase() === 'drinkquest' || args[0].toLowerCase() === 'dq' || args[0].toLowerCase() === 'drink'){
+            cmddrinkquest.drinkquest(message);
+        }
+        else if (args[0].toLowerCase() === 'hotspringquest' || args[0].toLowerCase() === 'hsq' || args[0].toLowerCase() === 'hotspring' || args[0].toLowerCase() === 'hsq' || args[0].toLowerCase() === 'spring'){
+            cmdhotquest.hotspringquest(message);
+        }
         console.log(prefix.prefix)
     }
 }
