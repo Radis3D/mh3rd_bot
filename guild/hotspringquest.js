@@ -34,7 +34,7 @@ module.exports = {
                 },
                 {
                     name: '4/7. Hidden Permafrost',
-                    value: 'Hunt 2 Great Baggi\n***Unlock Quest: Selesaikan Urgent Village 3★******\n***Status Unlock: +10 Health***',
+                    value: 'Hunt 2 Great Baggi\n***Unlock Quest: Selesaikan Urgent Village 3★***\n***Status Unlock: +10 Health***',
                     inline: false,
                 },
                 {
