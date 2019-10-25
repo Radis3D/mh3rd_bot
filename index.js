@@ -14,11 +14,13 @@ const cmdmonlist = require("./monster/monsterlist3rd.js")
 const cmdguildkey = require("./guild/guildkey3rd.js")
 const cmddrinkquest = require("./guild/drinkquest.js")
 const cmdhotquest = require("./guild/hotspringquest.js")
+const cmdhelp3rd = require("./monster/help3rd.js")
 global.cmdmon = cmdmon;
 global.cmdmonlist = cmdmonlist;
 global.cmdguildkey = cmdguildkey;
 global.cmddrinkquest = cmddrinkquest;
 global.cmdhotquest = cmdhotquest;
+global.cmdhelp3rd = cmdhelp3rd;
 
 config({
    path: __dirname + "/.env"
@@ -34,7 +36,7 @@ console.log(`i'm ready for service. I'm ${client.user.username}`);
     client.user.setPresence({
         status: "idle",
         game:{
-            name: "on Radish Devp (v. 1.1.1)",
+            name: "on Radish Devp",
             type: "WATCHING"
         }
     });

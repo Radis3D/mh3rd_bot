@@ -38,7 +38,7 @@ module.exports = {
                     inline: false,
                 },
                 {
-                    name: '5/20. ???',
+                    name: '5/20. Fishing Goldenfish',
                     value: 'Deliver 8 Golden Fish\n***Unlock Quest: Fish 15 times.***\n***Drink Unlock: Celebri-tea (Crazy Lucky Cat)***',
                     inline: false,
                 },
@@ -88,8 +88,8 @@ module.exports = {
                     inline: false,
                 },
                 {
-                    name: '15/20. ???',
-                    value: 'Hunt Jade Barroth and Glacial Agnaktor\n***Unlock Quest: Capture all monster subspecies.***\n***Drink Unlock: Hard Tea (Felyne Defense Upgrade) ***',
+                    name: '15/20. Extra Snow and Ice',
+                    value: 'Hunt the Main Monster (Jade Barroth and Glacial Agnaktor)\n***Unlock Quest: Capture all monster subspecies.***\n***Drink Unlock: Hard Tea (Felyne Defense Upgrade) ***',
                     inline: false,
                 },
                 {

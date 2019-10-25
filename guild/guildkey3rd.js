@@ -339,7 +339,7 @@ module.exports = {
             },
             fields: [
                 {
-                    name: '2/38.  Mountain Beast, I Moves!',
+                    name: '2/38.  Mountain Beast, It Moves!',
                     value: 'Hunt the Duromboros\n***Reqs : None***',
                     inline: true,
                 },
@@ -349,7 +349,7 @@ module.exports = {
                     inline: true,
                 },
                 {
-                    name: '15/38. In The Dark - A Fast Shadow ',
+                    name: '15/38. Heaven & Earth Territory! ',
                     value: 'Hunt the Rathalos and Rathian \n***Reqs : None***',
                     inline: true,
                 },

@@ -1,6 +1,6 @@
 {
   "name": "newmh3rdbot",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Recoding BOT MH3rd",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,9 @@
   },
   "keywords": [
     "Radish",
-    "Devp"
+    "Devp",
+    "Monster",
+    "Hunter"
   ],
   "author": "Radish Devp",
   "license": "ISC",
