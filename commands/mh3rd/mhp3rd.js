@@ -7,24 +7,30 @@ module.exports={
         if (!args.length) {
             message.channel.send(`${message.author}, gunakan _command_ \`${prefix.prefix}mh3rd help\` untuk melihat list _command_`);
         } else if (args[0].toLowerCase() === 'data' || args[0].toLowerCase() === 'd'){
-                if (args[1].toLowerCase() === 'great'){
-                if (args[2].toLowerCase() === 'jaggi'){
+            if (!args[1]){
+                message.channel.send(`${message.author}, mohon masukan nama monster yang ingin dicari datanya`);
+            } else if (args[1].toLowerCase() === 'great'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, ada 3 monster yang berawalan 'great';\n\`great jaggi, great wrogi,\` dan \`great baggi\``);
+                } else if (args[2].toLowerCase() === 'jaggi'){
                     cmdmon.greatjaggi(message);
                 } else if (args[2].toLowerCase() === 'baggi'){
                     cmdmon.greatbaggi(message);
                 } else if (args[2].toLowerCase() === 'wroggi'){
                     cmdmon.greatwroggi(message);
-                } else { 
-                    message.channel.send(`${message.author}, ada 3 monster yang berawalan 'great';\n\`great jaggi, great wrogi,\` dan \`great baggi\``);
                 }
             } else if (args[1].toLowerCase() === 'agnaktor'){
                 cmdmon.agnaktor(message);
             } else if (args[1].toLowerCase() === 'glacial' ){
-                if (args[2].toLowerCase() === 'agnaktor'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'agnaktor'){
                 cmdmon.glacialagnaktor(message);
                 }
             } else if (args[1].toLowerCase() === 'g.'){
-                if (args[2].toLowerCase() === 'jaggi'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'jaggi'){
                     cmdmon.greatjaggi(message);
                 } else if (args[2] === 'baggi'){
                     cmdmon.greatbaggi(message);
@@ -44,17 +50,23 @@ module.exports={
             } else if (args[1].toLowerCase() === 'barioth'){
                 cmdmon.barioth(message);
             } else if (args[1].toLowerCase() === 'sand'){
-                if (args[2].toLowerCase() === 'barioth'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'barioth'){
                     cmdmon.sandbarioth(message);
                 }
             } else if (args[1].toLowerCase() === 'barroth'){
                 cmdmon.barroth(message);
             } else if (args[1].toLowerCase() === 'jade'){
-                if (args[2].toLowerCase() === 'barroth'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'barroth'){
                     cmdmon.jadebarroth(message);
                 }
             } else if (args[1].toLowerCase() === 'j.'){
-                if (args[2].toLowerCase() === 'barroth'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'barroth'){
                     cmdmon.jadebarroth(message);
                 } else if (args[2].toLowerCase() === 'mohran'){
                     cmdmon.jhenmohran(message);
@@ -68,7 +80,9 @@ module.exports={
             } else if (args[1].toLowerCase() === 'diablos'){
                 cmdmon.diablos(message);
             } else if (args[1].toLowerCase() === 'black'){
-                if (args[2].toLowerCase() === 'diablos'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'diablos'){
                     cmdmon.blackdiablos(message);
                 } else if (args[2].toLowerCase() === 'tigrex'){
                     cmdmon.brutetigrex(message);
@@ -78,7 +92,9 @@ module.exports={
             } else if (args[1].toLowerCase() === 'giginox'){
                 cmdmon.giginox(message);
             } else if (args[1].toLowerCase() === 'b.'){
-                if (args[2].toLowerCase() === 'diablos'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'diablos'){
                     cmdmon.blackdiablos(message);
                 } else if (args[2].toLowerCase() === 'giginox'){
                     cmdmon.balefulgiginox(message);
@@ -86,13 +102,17 @@ module.exports={
                     cmdmon.brutetigrex(message);
                 }
             } else if (args[1].toLowerCase() === 'baleful'){
-                if (args[2].toLowerCase() === 'giginox'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'giginox'){
                     cmdmon.balefulgiginox(message);
                 }
             } else if (args[1].toLowerCase() === 'lagombi'){
                 cmdmon.lagombi(message);
             } else if (args[1].toLowerCase() === 'green'){
-                if (args[2].toLowerCase() === 'nargacuga' || args[2].toLowerCase() === 'narga'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'nargacuga' || args[2].toLowerCase() === 'narga'){
                     cmdmon.greennargacuga(message);
                 }
             } else if (args[1].toLowerCase() === 'niblesnarf'){
@@ -100,7 +120,9 @@ module.exports={
             } else if (args[1].toLowerCase() === 'qurupeco'){
                 cmdmon.qurupeco(message);
             } else if (args[1].toLowerCase() === 'crimson' || args[1].toLowerCase() === 'c.'){
-                if (args[2].toLowerCase() === 'qurupeco'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'qurupeco'){
                     cmdmon.crimsonqurupeco(message);
                 }
             } else if (args[1].toLowerCase() === 'rathalos'){
@@ -112,19 +134,27 @@ module.exports={
             } else if (args[1].toLowerCase() === 'tigrex'){
                 cmdmon.tigrex(message);
             } else if (args[1].toLowerCase() === 'brute'){
-                if (args[2].toLowerCase() === 'tigrex'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'tigrex'){
                     cmdmon.brutetigrex(message);
                 }
             } else if (args[1].toLowerCase() === 'golden'){
-                if (args[2].toLowerCase() === 'rathian'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'rathian'){
                     cmdmon.goldenrathian(message);
                 }
             } else if (args[1].toLowerCase() === 'silver'){
-                if (args[2].toLowerCase() === 'rathalos'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'rathalos'){
                     cmdmon.silverrathalos(message);
                 }
             } else if (args[1].toLowerCase() === 's.'){
-                if (args[2].toLowerCase() === 'rathalos'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'rathalos'){
                     cmdmon.silverrathalos(message);
                 } else if (args[2].toLowerCase() === 'barioth'){
                     cmdon.sandbarioth(message);
@@ -132,11 +162,15 @@ module.exports={
                     cmdmon.steeluragaan(message);
                 }
             } else if (args[1].toLowerCase() === 'royal' || args[1].toLowerCase() === 'r.'){
-                if (args[2].toLowerCase() === 'ludroth'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'ludroth'){
                     cmdmon.royalludroth(message);
                 }
             } else if (args[1].toLowerCase() === 'purple' || args[1].toLowerCase() === 'p.'){
-                if (args[2].toLowerCase() === 'ludroth'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'ludroth'){
                     cmdmon.purpleludroth(message);
                 }
             } else if (args[1].toLowerCase() === 'uragaan'){
@@ -150,11 +184,15 @@ module.exports={
             } else if (args[1].toLowerCase() === 'amatsu'){
                 cmdmon.amatsu(message);
             } else if (args[1].toLowerCase() === 'jhen'){
-                if (args[2].toLowerCase() === 'mohran'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'mohran'){
                     cmdmon.jhenmohran(message);
                 }
             } else if (args[1].toLowerCase() === 'steel'){
-                if (args[2].toLowerCase() === 'uragaan'){
+                if (!args[2]){
+                    message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
+                } else if (args[2].toLowerCase() === 'uragaan'){
                     cmdmon.steeluragaan(message);
                 }
             }
@@ -163,9 +201,11 @@ module.exports={
             cmdmonlist.monslist(message);
             //break;
         } else if (args[0].toLowerCase() === 'monster'){
-            if (args[1].toLowerCase() === 'list'){
-            cmdmonlist.monslist(message);
+            if(!args[1]){
+                message.channel.send(`${message.author}, _Command_ tidak ditemukan, silahkan gunakan _command_ \`${prefix.prefix}mh3rd help\` untuk melihat list _command_`);
             //break;
+            } else if (args[1].toLowerCase() === 'list'){
+                cmdmonlist.monslist(message); 
             }
         }
         else if (args[0].toLowerCase() === 'keyquest' || args[0].toLowerCase() === 'kq' || args[0].toLowerCase() === 'keyguild' || args[0].toLowerCase() === 'kg'){
@@ -191,6 +231,32 @@ module.exports={
         }
         else if (args[0].toLowerCase() === 'help' || args[0].toLowerCase() === 'h'){
             cmdhelp3rd.help(message);
+        }
+        else if (args[0].toLowerCase() === 'drop' || args[0].toLowerCase() === 'search' || args[0].toLowerCase() === 's'){
+            if (!args[1]){
+               //message.channel.send(`${message.author}, mohon masukan nama item yang akan dicari`);
+               message.channel.send(`command ini sedang dalam pengerjaan, mohon bersabar`);
+            /* } else if (args[1].toLowerCase() === 'rathian'){
+                if (!args[2]){
+                    message.channel.send('data kurang lengkap');
+                } else if (args[2] === 'scale+'){
+                    cmddropitem.rathianScaleP(message);
+                } */
+               
+            }
+            /* if (args[1] === ' '){
+                args[1] = 'nothing';
+                console.log(args[1]+' '+args.length)
+                
+            } else 
+                if (args[2].toLowerCase() === 'Scale+'){
+                    cmddropitem.rathianScaleP(message);
+                }
+                
+            } */
+        }
+        else {
+            message.channel.send(`${message.author}, _command_ tidak ditemukan, silahkan gunakan _command_ \`${prefix.prefix}mh3rd help\` untuk melihat command list`);
         }
         console.log(prefix.prefix)
     }

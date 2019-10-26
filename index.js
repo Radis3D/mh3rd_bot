@@ -15,12 +15,15 @@ const cmdguildkey = require("./guild/guildkey3rd.js")
 const cmddrinkquest = require("./guild/drinkquest.js")
 const cmdhotquest = require("./guild/hotspringquest.js")
 const cmdhelp3rd = require("./monster/help3rd.js")
+const cmddropitem = require("./item/monsterdrop3rd.js")
+//const cmddropitem = require("./item/allitem3rd.js")
 global.cmdmon = cmdmon;
 global.cmdmonlist = cmdmonlist;
 global.cmdguildkey = cmdguildkey;
 global.cmddrinkquest = cmddrinkquest;
 global.cmdhotquest = cmdhotquest;
 global.cmdhelp3rd = cmdhelp3rd;
+global.cmddropitem = cmddropitem;
 
 config({
    path: __dirname + "/.env"
@@ -36,7 +39,7 @@ console.log(`i'm ready for service. I'm ${client.user.username}`);
     client.user.setPresence({
         status: "idle",
         game:{
-            name: "on Radish Devp",
+            name: "on Radish Devp v1.1.1",
             type: "WATCHING"
         }
     });
@@ -46,7 +49,9 @@ client.on("message", async message =>{
 
     //const prefix = "";//"_";
 
-    console.log(`${message.author.username} sent a message : ${message.content}`)
+    if (message.content.startsWith(prefix) || !message.author.bot){
+    console.log(`${message.author.username} sent a message : ${message.content}`)}
+    else if(!message.content.startsWith(prefix)) return;
 
     if(message.author.bot) return;
     if(!message.guild) return;
@@ -65,7 +70,7 @@ client.on("message", async message =>{
     client.user.setStatus('idle', 'Made by Radish Devp')
 });
 
-//client.login(process.env.bot_toket);
+// client.login(process.env.bot_toket);
 client.login(process.env.BOT_TOKEN);
 console.log(`prefix: `+prefix.prefix)
 
