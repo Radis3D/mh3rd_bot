@@ -23,7 +23,7 @@ module.exports = {
                     inline: false,
                 },
                 {
-                    name: '2/20. ???',
+                    name: '2/20. Strongest and most dangerous?',
                     value: 'Hunt the main monster (Hunt Brute Tigrex and Deviljho)\n***Unlock Quest: Complete 3 HR 6 warning quests.***\n***Drink Unlock: Miracle Macchiato (Felyne Dismantle Upgrade)***',
                     inline: false,
                 },
