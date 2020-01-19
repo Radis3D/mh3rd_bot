@@ -123,12 +123,12 @@ module.exports = {
            // url: 'https://discord.js.org',
             author: {
                 name: 'Village Quest Lv ★★★ (Total Quest 19)',
-                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHP3rd-Konaha.png',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/Yukumo-Chief.png',
                 //url: 'https://discord.js.org',
             },
             //description: 'Some description here',
             thumbnail: {
-                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHP3rd-Konaha.png',
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/Yukumo-Chief.png',
             },
             fields: [
                 {
@@ -182,12 +182,12 @@ module.exports = {
            // url: 'https://discord.js.org',
             author: {
                 name: 'Village Quest Lv ★★★★ (Total Quest 17)',
-                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHP3rd-Konaha.png',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/Yukumo-Chief.png',
                 //url: 'https://discord.js.org',
             },
             //description: 'Some description here',
             thumbnail: {
-                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHP3rd-Konaha.png',
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/Yukumo-Chief.png',
             },
             fields: [
                 {
@@ -236,12 +236,12 @@ module.exports = {
            // url: 'https://discord.js.org',
             author: {
                 name: 'Guild Quest HR 5 (Total Quest 17)',
-                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHP3rd-Konaha.png',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/Yukumo-Chief.png',
                 //url: 'https://discord.js.org',
             },
             //description: 'Some description here',
             thumbnail: {
-                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHP3rd-Konaha.png',
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/Yukumo-Chief.png',
             },
             fields: [
                 {
@@ -295,12 +295,12 @@ module.exports = {
            // url: 'https://discord.js.org',
             author: {
                 name: 'Village Quest Lv ★★★★★★ (Total Quest 15)',
-                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHP3rd-Konaha.png',
+                icon_url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/Yukumo-Chief.png',
                 //url: 'https://discord.js.org',
             },
             //description: 'Some description here',
             thumbnail: {
-                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/0/0c/MHP3rd-Konaha.png',
+                url: 'https://vignette.wikia.nocookie.net/monsterhunter/images/e/e4/Yukumo-Chief.png',
             },
             fields: [
                 {
