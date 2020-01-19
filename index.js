@@ -16,6 +16,7 @@ const cmddrinkquest = require("./guild/drinkquest.js")
 const cmdhotquest = require("./guild/hotspringquest.js")
 const cmdhelp3rd = require("./monster/help3rd.js")
 const cmddropitem = require("./item/monsterdrop3rd.js")
+const cmdvillagekey = require("./village/village3rdkey.js")
 //const cmddropitem = require("./item/allitem3rd.js")
 global.cmdmon = cmdmon;
 global.cmdmonlist = cmdmonlist;
@@ -24,6 +25,7 @@ global.cmddrinkquest = cmddrinkquest;
 global.cmdhotquest = cmdhotquest;
 global.cmdhelp3rd = cmdhelp3rd;
 global.cmddropitem = cmddropitem;
+global.cmdvillagekey = cmdvillagekey;
 
 config({
    path: __dirname + "/.env"
