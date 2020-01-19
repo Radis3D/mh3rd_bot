@@ -43,6 +43,11 @@ module.exports = {
                     value: `Cara    : \`${prefix.prefix}mh3rd keyquest <hr>\`\nContoh  : \`${prefix.prefix}mh3rd keyquest hr1\`\nFungsi : untuk mengetahui list _key quest guild_ hr1-h6\nAlias   : kq, keyguild, kg`,
                     inline: false,
                 },
+                {
+                    name: 'villagekey',
+                    value: `Cara    : \`${prefix.prefix}mh3rd villagekey <v>\`\nContoh  : \`${prefix.prefix}mh3rd villagekey v1\`\nFungsi : untuk mengetahui list _key quest village_ 1★-6★\nAlias   : vq, villagequest, vk`,
+                    inline: false,
+                },
                
                
                 /* {
