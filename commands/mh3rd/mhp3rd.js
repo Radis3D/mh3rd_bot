@@ -223,6 +223,21 @@ module.exports={
                 cmdguildkey.hr6(message);
             }
         }
+        else if (args[0].toLowerCase() === 'villagekey' || args[0].toLowerCase() === 'vk' || args[0].toLowerCase() === 'villagequest' || args[0].toLowerCase() === 'vq'){
+            if (args[1].toLowerCase() === 'v1'){
+                cmdvillagekey.v1(message);
+            } else if (args[1].toLowerCase() === 'v2'){
+                cmdvillagekey.v2(message);
+            } else if (args[1].toLowerCase() === 'v3'){
+                cmdvillagekey.v3(message);
+            } else if (args[1].toLowerCase() === 'v4'){
+                cmdvillagekey.v4(message);
+            } else if (args[1].toLowerCase() === 'v5'){
+                cmdvillagekey.v5(message);
+            } else if (args[1].toLowerCase() === 'v6'){
+                cmdvillagekey.v6(message);
+            }
+        }
         else if (args[0].toLowerCase() === 'drinkquest' || args[0].toLowerCase() === 'dq' || args[0].toLowerCase() === 'drink'){
             cmddrinkquest.drinkquest(message);
         }
