@@ -89,14 +89,14 @@ module.exports={
                 }
             } else if (args[1].toLowerCase() === 'duramboros'){
                 cmdmon.duramboros(message);
-            } else if (args[1].toLowerCase() === 'giginox'){
+            } else if (args[1].toLowerCase() === 'giginox' || args[1].toLowerCase() === 'gigi'){
                 cmdmon.giginox(message);
             } else if (args[1].toLowerCase() === 'b.'){
                 if (!args[2]){
                     message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
                 } else if (args[2].toLowerCase() === 'diablos'){
                     cmdmon.blackdiablos(message);
-                } else if (args[2].toLowerCase() === 'giginox'){
+                } else if (args[2].toLowerCase() === 'giginox' || args[2].toLowerCase() === 'gigi'){
                     cmdmon.balefulgiginox(message);
                 } else if (args[2].toLowerCase() === 'tigrex'){
                     cmdmon.brutetigrex(message);
@@ -117,12 +117,12 @@ module.exports={
                 }
             } else if (args[1].toLowerCase() === 'niblesnarf'){
                 cmdmon.niblesarf(message);
-            } else if (args[1].toLowerCase() === 'qurupeco'){
+            } else if (args[1].toLowerCase() === 'qurupeco' || args[1].toLowerCase() === 'peco'){
                 cmdmon.qurupeco(message);
             } else if (args[1].toLowerCase() === 'crimson' || args[1].toLowerCase() === 'c.'){
                 if (!args[2]){
                     message.channel.send(`${message.author}, nama monster tidak lengkap atau tidak ada monster dengan nama itu\nGunakan \`${prefix.prefix}mh3rd monster list\` untuk melihat list great monster`);
-                } else if (args[2].toLowerCase() === 'qurupeco'){
+                } else if (args[2].toLowerCase() === 'qurupeco' || args[2].toLowerCase() === 'peco'){
                     cmdmon.crimsonqurupeco(message);
                 }
             } else if (args[1].toLowerCase() === 'rathalos'){
@@ -195,6 +195,8 @@ module.exports={
                 } else if (args[2].toLowerCase() === 'uragaan'){
                     cmdmon.steeluragaan(message);
                 }
+            } else if (args[1].toLowerCase() === 'silos'){
+                cmdmon.silverrathalos(message); 
             }
         }
         else if (args[0].toLowerCase() === 'monlist' || args[0].toLowerCase() === 'monslist'){
