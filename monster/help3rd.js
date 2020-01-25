@@ -20,35 +20,39 @@ module.exports = {
             fields: [
                 {
                     name: 'data',
-                    value: `Cara    : \`${prefix.prefix}mh3rd data <nama monster>\`\nContoh  : \`${prefix.prefix}mh3rd data agnaktor\`\nFungsi : untuk mengetahui data monster\nAlias   : d`,
+                    value: `Cara    : \`${prefix.prefix}mh3rd data <nama monster>\`\nContoh  : \`${prefix.prefix}mh3rd || ${prefix.prefix}p3 data agnaktor\`\nFungsi : untuk mengetahui data monster\nAlias   : d`,
                     inline: false,
                 },
                 {
                     name: 'drinkquest',
-                    value: `Cara    : \`${prefix.prefix}mh3rd drinkquest\`\nContoh  : \`${prefix.prefix}mh3rd drinkquest\`\nFungsi : untuk mengetahui list _drink quest_\nAlias   : dq, drink`,
+                    value: `Cara    : \`${prefix.prefix}mh3rd drinkquest\`\nContoh  : \`${prefix.prefix}mh3rd || ${prefix.prefix}p3 drinkquest\`\nFungsi : untuk mengetahui list _drink quest_\nAlias   : dq, drink`,
                     inline: false,
                 },
                 {
                     name: 'hotspringquest',
-                    value: `Cara    : \`${prefix.prefix}mh3rd hotspringquest\`\nContoh  : \`${prefix.prefix}mh3rd hotspringquest\`\nFungsi : untuk mengetahui list _hot spring quest_\nAlias   : hsq, spring, hotspring`,
+                    value: `Cara    : \`${prefix.prefix}mh3rd hotspringquest\`\nContoh  : \`${prefix.prefix}mh3rd || ${prefix.prefix}p3 hotspringquest\`\nFungsi : untuk mengetahui list _hot spring quest_\nAlias   : hsq, spring, hotspring`,
                     inline: false,
                 },
                 {
                     name: 'monster list',
-                    value: `Cara    : \`${prefix.prefix}mh3rd monster list\`\nContoh  : \`${prefix.prefix}mh3rd monster list\`\nFungsi : untuk mengetahui list _great monster_\nAlias   : monslist, monlist`,
+                    value: `Cara    : \`${prefix.prefix}mh3rd monster list\`\nContoh  : \`${prefix.prefix}mh3rd || ${prefix.prefix}p3 monster list\`\nFungsi : untuk mengetahui list _great monster_\nAlias   : monslist, monlist`,
                     inline: false,
                 },
                 {
                     name: 'keyquest',
-                    value: `Cara    : \`${prefix.prefix}mh3rd keyquest <hr>\`\nContoh  : \`${prefix.prefix}mh3rd keyquest hr1\`\nFungsi : untuk mengetahui list _key quest guild_ hr1-h6\nAlias   : kq, keyguild, kg`,
+                    value: `Cara    : \`${prefix.prefix}mh3rd keyquest <hr>\`\nContoh  : \`${prefix.prefix}mh3rd || ${prefix.prefix}p3 keyquest hr1\`\nFungsi : untuk mengetahui list _key quest guild_ hr1-h6\nAlias   : kq, keyguild, kg`,
                     inline: false,
                 },
                 {
                     name: 'villagekey',
-                    value: `Cara    : \`${prefix.prefix}mh3rd villagekey <v>\`\nContoh  : \`${prefix.prefix}mh3rd villagekey v1\`\nFungsi : untuk mengetahui list _key quest village_ 1★-6★\nAlias   : vq, villagequest, vk`,
+                    value: `Cara    : \`${prefix.prefix}mh3rd villagekey <v>\`\nContoh  : \`${prefix.prefix}mh3rd || ${prefix.prefix}p3 villagekey v1\`\nFungsi : untuk mengetahui list _key quest village_ 1★-6★\nAlias   : vq, villagequest, vk`,
                     inline: false,
                 },
-               
+                {
+                    name: 'specialquest',
+                    value: `Cara    : \`${prefix.prefix}mh3rd special quest\`\nContoh  : \`${prefix.prefix}mh3rd || ${prefix.prefix}p3 special quest\`\nFungsi : untuk mengetahui list dan cara \'unlock\' _special quest HR6_ \nAlias   : sp. quest`,
+                    inline: false,
+                },
                
                 /* {
                     name: 'Inline field title',
