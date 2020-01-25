@@ -1574,7 +1574,7 @@ module.exports = {
             },
         };
         //message.channel.send({files: [attachment], embed:agnaktor_embed});
-        message.channel.send({embed:silverrathalos_embed});
+        message.channel.send({embed:rathian_embed});
         console.log('responded')
     },
 
