@@ -1352,7 +1352,7 @@ module.exports = {
     
     crimsonqurupeco: function(message){
         //const attachment = new discord.Attachment('./img/DMG-Agnaktor.png')
-        const qurupeco_embed = {
+        const crimsonqurupeco_embed = {
             color: 0x00AE86,
             title: 'Crimson Qurupeco / クルペッコ亜種 (Kurupekko Ashu)',
             //url: 'https://discord.js.org',
