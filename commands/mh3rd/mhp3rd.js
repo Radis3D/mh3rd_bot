@@ -1,6 +1,6 @@
 module.exports={
     name: "mhp3rd",
-    aliases: ["mh3rd", "3rd"],
+    aliases: ["mh3rd", "3rd", "p3"],
     category: "monsterhunter3rd",
     description: "Data data monster hunter portable 3rd",
     run: async (client, message, args) => {
@@ -248,6 +248,11 @@ module.exports={
         }
         else if (args[0].toLowerCase() === 'help' || args[0].toLowerCase() === 'h'){
             cmdhelp3rd.help(message);
+        }
+        else if (args[0].toLowerCase() === 'special' || args[0].toLowerCase() === 'sp'){
+            if (args[1].toLowerCase() === 'quest'){
+            cmdspecialquest.specialquest(message);
+            }
         }
         else if (args[0].toLowerCase() === 'drop' || args[0].toLowerCase() === 'search' || args[0].toLowerCase() === 's'){
             if (!args[1]){
