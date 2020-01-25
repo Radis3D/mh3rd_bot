@@ -249,7 +249,7 @@ module.exports={
         else if (args[0].toLowerCase() === 'help' || args[0].toLowerCase() === 'h'){
             cmdhelp3rd.help(message);
         }
-        else if (args[0].toLowerCase() === 'special' || args[0].toLowerCase() === 'sp'){
+        else if (args[0].toLowerCase() === 'special' || args[0].toLowerCase() === 'sp.' || args[0].toLowerCase() === 'sp'){
             if (args[1].toLowerCase() === 'quest'){
             cmdspecialquest.specialquest(message);
             }
